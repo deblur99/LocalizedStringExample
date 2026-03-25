@@ -11,7 +11,8 @@ import SwiftUI
 struct LocalizedStringExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            SampleView()
         }
     }
 }

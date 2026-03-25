@@ -1,0 +1,85 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    ".strings / .stringsdict 가져오기" : {
+
+    },
+    ".xcstrings 가져오기" : {
+
+    },
+    "Key" : {
+      "comment" : "22",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "열쇠"
+          }
+        }
+      }
+    },
+    "login_btn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログイン"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "로그인"
+          }
+        }
+      }
+    },
+    "welcome_home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to Home!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホームへようこそ！"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "집에 오신 것을 환영합니다!"
+          }
+        }
+      }
+    },
+    "다국어 문자열 가져오기/내보내기 테스트" : {
+
+    },
+    "저장할 파일 URL: %@" : {
+
+    },
+    "파일 불러오기" : {
+
+    },
+    "파일 저장 테스트" : {
+
+    },
+    "파일 저장하기" : {
+
+    }
+  },
+  "version" : "1.1"
+}

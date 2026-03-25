@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  LocalizedStringExample
+
+  Created by 한현민 on 3/23/26.
+  
+*/
+
+"welcome_home" = "집에 오신 것을 환영합니다!";
+"login_btn" = "로그인";

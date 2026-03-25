@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LocalizedStringExample
+
+  Created by 한현민 on 3/23/26.
+  
+*/
+
+// translate "Welcome to Home!" into Japanese
+"welcome_home" = "ホームへようこそ！";
+"login_btn" = "ログイン";
