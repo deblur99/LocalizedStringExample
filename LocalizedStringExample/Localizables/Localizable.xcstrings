@@ -7,6 +7,29 @@
     ".xcstrings 가져오기" : {
 
     },
+    "%lld 송이의 꽃이 있습니다." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld 송이의 꽃이 있습니다."
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "%lld 송이의 꽃이 있습니다."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "Key" : {
       "comment" : "22",
       "extractionState" : "manual",
@@ -17,7 +40,11 @@
             "value" : "열쇠"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
+    },
+    "Key 1" : {
+      "extractionState" : "manual"
     },
     "login_btn" : {
       "extractionState" : "manual",
@@ -35,9 +62,33 @@
           }
         },
         "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "로그인"
+          "variations" : {
+            "device" : {
+              "appletv" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "로그인 버튼 클릭"
+                }
+              },
+              "applevision" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "로그인 버튼 클릭"
+                }
+              },
+              "mac" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "로그인 버튼 클릭"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "로그인 버튼 탭"
+                }
+              }
+            }
           }
         }
       }
@@ -66,7 +117,7 @@
       }
     },
     "다국어 문자열 가져오기/내보내기 테스트" : {
-
+      "shouldTranslate" : false
     },
     "저장할 파일 URL: %@" : {
 

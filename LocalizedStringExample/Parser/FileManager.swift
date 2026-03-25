@@ -25,15 +25,15 @@ class FileManager {
     }
     
     /// 파일 탐색기 열어서 .xcstrings 파일 저장하기
-    func showSavePanel(fileName: String = "Localizable.xcstrings") -> URL? {
+    func showSavePanel(defaultFileName: String) -> URL? {
         let savePanel = NSSavePanel()
-        
+
         // 1) 패널 설정
         savePanel.allowedContentTypes = [.init(filenameExtension: "xcstrings")!]
         savePanel.canCreateDirectories = true
         savePanel.isExtensionHidden = false
         savePanel.title = "다국어 카탈로그 저장"
-        savePanel.nameFieldStringValue = fileName
+        savePanel.nameFieldStringValue = defaultFileName
         savePanel.message = "문자열 카탈로그를 저장할 위치를 선택하세요."
         
         // 2) 패널 실행
@@ -70,7 +70,7 @@ struct SampleView: View {
             }
             
             Button("파일 저장하기") {
-                guard let fetchedUrl = FileManager().showSavePanel() else {
+                guard let fetchedUrl = FileManager().showSavePanel(defaultFileName: "Localizable.xcstrings") else {
                     return
                 }
                 

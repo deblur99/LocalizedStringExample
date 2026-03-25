@@ -20,16 +20,22 @@ public nonisolated struct XCStringsItem: Sendable, Codable, Hashable {
     /// locale : localizations pairs
     var localizations: [String: XCStringsLocalizationItem]?
     var comment: String?
+    var shouldTranslate: Bool?
 }
 
 public nonisolated enum XCStringsExtractionState: String, Sendable, Codable {
     case manual
     case migrated
-    // 코드에서 자동 추출된 경우 값이 없을 수 있음
 }
 
 public nonisolated struct XCStringsLocalizationItem: Sendable, Codable, Hashable {
     var stringUnit: XCStringsStringUnit?
+    var variations: XCStringsVariation?
+}
+
+public nonisolated struct XCStringsVariation: Sendable, Codable, Hashable {
+    var device: [String: XCStringsLocalizationItem]?
+    var plural: [String: XCStringsLocalizationItem]?
 }
 
 public nonisolated struct XCStringsStringUnit: Sendable, Codable, Hashable {
@@ -50,22 +56,42 @@ public extension XCStringsData {
         print("Version: \(version)")
         
         for (key, item) in strings {
-            print(
-                "Key: \(key), Extraction State: \(item.extractionState?.rawValue ?? "unknown")"
-            )
+            print("\n--- Key: \(key) ---")
+            print("Extraction State: \(item.extractionState?.rawValue ?? "unknown")")
+            print("Should Translate: \(item.shouldTranslate ?? true)")
+            print("Comment: \(item.comment ?? "none")")
             
             guard let localizations = item.localizations else {
+                print("  (No localizations found)")
                 continue
             }
             
             for (locale, localization) in localizations {
-                guard let stringUnit = localization.stringUnit else {
-                    continue
+                // 1. 일반 문자열(stringUnit) 출력
+                if let stringUnit = localization.stringUnit {
+                    print("  Locale: \(locale), State: \(stringUnit.state.rawValue), Value: \(stringUnit.value)")
                 }
                 
-                print(
-                    "  Locale: \(locale), String Unit State: \(stringUnit.state.rawValue), Value: \(stringUnit.value)"
-                )
+                // 2. 변형(variations) 출력
+                if let variations = localization.variations {
+                    // 기기별 변형 (device) [cite: 9, 10, 11, 12, 13]
+                    if let deviceVariations = variations.device {
+                        for (device, deviceLoc) in deviceVariations {
+                            if let unit = deviceLoc.stringUnit {
+                                print("  Locale: \(locale), Device: \(device), State: \(unit.state.rawValue), Value: \(unit.value)")
+                            }
+                        }
+                    }
+                    
+                    // 복수형 변형 (plural) [cite: 3, 4, 5, 6]
+                    if let pluralVariations = variations.plural {
+                        for (pluralForm, pluralLoc) in pluralVariations {
+                            if let unit = pluralLoc.stringUnit {
+                                print("  Locale: \(locale), Plural: \(pluralForm), State: \(unit.state.rawValue), Value: \(unit.value)")
+                            }
+                        }
+                    }
+                }
             }
         }
     }

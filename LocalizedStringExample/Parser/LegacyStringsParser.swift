@@ -13,7 +13,7 @@ import Foundation
 // 4) 샘플 데이터를 .strings Plain Text 파일, .stringsdict XML 파일로 변환하기
 // 5) 3)에서 생성된 로케일별 세부 경로 안에 변환된 4) 파일 내보내기
 
-public actor LegacyParser {
+public nonisolated enum LegacyStringsParser {
     
 }
 
