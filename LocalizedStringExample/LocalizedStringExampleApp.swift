@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct LocalizedStringExampleApp: App {
+    @State private var vm = EditorViewModel()
+
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            SampleView()
+            EditorView(vm: vm)
         }
     }
 }

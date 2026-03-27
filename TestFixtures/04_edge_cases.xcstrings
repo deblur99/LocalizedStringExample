@@ -1,0 +1,138 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "key with spaces" : {
+      "comment" : "키에 공백 포함",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key has spaces"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "키에 공백이 있음"
+          }
+        }
+      }
+    },
+    "key/with/slashes" : {
+      "comment" : "키에 슬래시 포함",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key has slashes"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "키에 슬래시가 있음"
+          }
+        }
+      }
+    },
+    "emoji_key 🎉" : {
+      "comment" : "키에 이모지 포함",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Party time! 🎉🎊"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "축하해요! 🎉🎊"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おめでとう！ 🎉🎊"
+          }
+        }
+      }
+    },
+    "multiline_value" : {
+      "comment" : "값에 줄바꿈 포함",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Line 1\nLine 2\nLine 3"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "첫 번째 줄\n두 번째 줄\n세 번째 줄"
+          }
+        }
+      }
+    },
+    "special_chars" : {
+      "comment" : "값에 특수문자 포함: 따옴표, 역슬래시 등",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "He said \"Hello\" and she replied 'Hi'"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "그가 \"안녕\"이라고 했고 그녀는 '반가워'라고 답했다"
+          }
+        }
+      }
+    },
+    "empty_value_key" : {
+      "comment" : "값이 빈 문자열인 경우",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "한글_키" : {
+      "comment" : "키 자체가 한글인 경우",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korean key"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한글 키"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

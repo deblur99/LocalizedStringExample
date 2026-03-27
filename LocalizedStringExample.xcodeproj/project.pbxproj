@@ -14,8 +14,7 @@
 		613950992F73642300DF8181 /* Exceptions for "LocalizedStringExample" folder in "LocalizedStringExample" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Localizables/Localizable.strings",
-				"/Localized: Localizables/Localizable.stringsdict",
+				Localizables/Localizable.xcstrings,
 			);
 			target = 6139507B2F7118EE00DF8181 /* LocalizedStringExample */;
 		};

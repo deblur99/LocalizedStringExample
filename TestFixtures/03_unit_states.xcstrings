@@ -1,0 +1,102 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "state_translated" : {
+      "comment" : "state: translated — 번역 완료",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is translated"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "번역 완료된 문자열"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "翻訳済みの文字列"
+          }
+        }
+      }
+    },
+    "state_new" : {
+      "comment" : "state: new — 새로 추가되어 아직 번역되지 않음",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Newly added string"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "state_needs_review" : {
+      "comment" : "state: needs_review — 번역은 있지만 검토 필요",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "String needing review"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "검토가 필요한 문자열 (임시 번역)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "レビューが必要な文字列（仮翻訳）"
+          }
+        }
+      }
+    },
+    "state_reviewed" : {
+      "comment" : "state: reviewed — 번역 및 검토 완료",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reviewed and approved string"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "reviewed",
+            "value" : "검토 완료된 문자열"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "reviewed",
+            "value" : "レビュー済みの文字列"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

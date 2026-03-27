@@ -1,0 +1,63 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "manually_added_key" : {
+      "comment" : "extractionState: manual — 수동으로 추가된 키",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manually Added"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "수동으로 추가됨"
+          }
+        }
+      }
+    },
+    "migrated_key" : {
+      "comment" : "extractionState: migrated — .strings 파일에서 마이그레이션된 키",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Migrated from .strings"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".strings에서 마이그레이션됨"
+          }
+        }
+      }
+    },
+    "auto_extracted_key" : {
+      "comment" : "extractionState 없음 — 코드에서 자동 추출된 키",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto Extracted from Code"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "코드에서 자동 추출됨"
+          }
+        }
+      }
+    },
+    "no_localization_key" : {
+      "comment" : "localizations 없음 — 번역이 아직 없는 키",
+      "extractionState" : "manual"
+    }
+  },
+  "version" : "1.1"
+}
